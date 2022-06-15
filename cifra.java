@@ -12,15 +12,14 @@ public class cifra {
 		String[] palavraSplit = palavra.split("");
 		
 		String palavraCifrada = "";
+		String vogais = "a e i o u";
 
 		for (int i = 0; i < palavraSplit.length; i++) {
 			String letra = palavraSplit[i];
 			String letraCifrada = letra;
 
 			int posicaoDaLetra = alfabeto.indexOf(letra);
-
-			String vogais = "a e i o u";
-
+			
 			if (!vogais.contains(letra)) {
 
 				String[] listaVogais = vogais.split(" ");
@@ -75,30 +74,30 @@ public class cifra {
 	}
 }
 /*
-Cifra da Nlogônia
-O rei da Nlogônia ordenou que todos os documentos importantes sejam "cifrados", para que apenas quem tem conhecimento da cifra possa lê-los (cifrar um documento significa alterar o original modificando as letras de acordo com algum algoritmo de cifra).
+Cifra da NlogÃ´nia
+O rei da NlogÃ´nia ordenou que todos os documentos importantes sejam "cifrados", para que apenas quem tem conhecimento da cifra possa lÃª-los (cifrar um documento significa alterar o original modificando as letras de acordo com algum algoritmo de cifra).
 
 O rei decretou que o seguinte algotimo deve ser usado para cifrar os documentos:
 
-Cada consoante deve ser substituída por exatamente três letras, na seguinte ordem:
-a própria consoante (vamos chamar de consoante original);
-a vogal mais próxima da consoante original no alfabeto, com a regra adicional de que se a consoante original está à mesma distância de duas vogais, então a vogal mais próxima do início do alfabeto é usada. Por exemplo, se a consoante original é d, a vogal que deve ser usada é e, pois esta é a vogal mais próxima; se a consoante original é c, a vogal que deve ser utilizada é a, porque c está à mesma distância de a e e, e a é mais próxima do início do alfabeto.
-a consoante que segue a consoante original, na ordem do início ao fim do alfabeto. Por exemplo, se a consoante original é d, a consoante a ser utilizada é f. No caso de a consoante original ser z, deve ser utilizada a própria letra z.
-As vogais não são modificadas.
-Nesta tarefa, o alfabeto é
+Cada consoante deve ser substituÃ­da por exatamente trÃªs letras, na seguinte ordem:
+a prÃ³pria consoante (vamos chamar de consoante original);
+a vogal mais prÃ³xima da consoante original no alfabeto, com a regra adicional de que se a consoante original estÃ¡ Ã  mesma distÃ¢ncia de duas vogais, entÃ£o a vogal mais prÃ³xima do inÃ­cio do alfabeto Ã© usada. Por exemplo, se a consoante original Ã© d, a vogal que deve ser usada Ã© e, pois esta Ã© a vogal mais prÃ³xima; se a consoante original Ã© c, a vogal que deve ser utilizada Ã© a, porque c estÃ¡ Ã  mesma distÃ¢ncia de a e e, e a Ã© mais prÃ³xima do inÃ­cio do alfabeto.
+a consoante que segue a consoante original, na ordem do inÃ­cio ao fim do alfabeto. Por exemplo, se a consoante original Ã© d, a consoante a ser utilizada Ã© f. No caso de a consoante original ser z, deve ser utilizada a prÃ³pria letra z.
+As vogais nÃ£o sÃ£o modificadas.
+Nesta tarefa, o alfabeto Ã©
 a b c d e f g h i j k l m n o p q r s t u v x z
-e as vogais são
+e as vogais sÃ£o
 a e i o u
-Por exemplo, a cifra da palavra "ter" é "tuveros" (tuv-e-ros) e a cifra da palavra "paz" é "poqazuz" (poq-a-zuz).
+Por exemplo, a cifra da palavra "ter" Ã© "tuveros" (tuv-e-ros) e a cifra da palavra "paz" Ã© "poqazuz" (poq-a-zuz).
 
-O rei da Nlogônia procura por alguém que saiba escrever um programa que produza a cifra de uma palavra dada. Você pode ajudá-lo?
+O rei da NlogÃ´nia procura por alguÃ©m que saiba escrever um programa que produza a cifra de uma palavra dada. VocÃª pode ajudÃ¡-lo?
 
 Entrada
-A primeira e única linha da entrada contém uma palavra P formada por letras minúsculas sem acentuação.
+A primeira e Ãºnica linha da entrada contÃ©m uma palavra P formada por letras minÃºsculas sem acentuaÃ§Ã£o.
 
-Saída
-Seu programa deve produzir uma única linha, contendo a palavra cifrada.
+SaÃ­da
+Seu programa deve produzir uma Ãºnica linha, contendo a palavra cifrada.
 
-Restrições
-A palavra P tem no mínimo uma e no máximo 30 letras, todas minúsculas e sem acentuação.
+RestriÃ§Ãµes
+A palavra P tem no mÃ­nimo uma e no mÃ¡ximo 30 letras, todas minÃºsculas e sem acentuaÃ§Ã£o.
 */
